@@ -72,7 +72,7 @@ Style your project in a simple way with the html style tag.
 
 ## 2. Get Files
 
-- **1.1** Create a route to the desired file and get it for editing.
+- **2.1** Create a route to the desired file and get it for editing.
 
 ```bash
 <?php
@@ -95,7 +95,7 @@ if (isset($_GET['file']) && file_exists('files/' . $_GET['file'])) :
 <?php endif ?>
 ```
 
-- **1.2** Update styles
+- **2.2** Update styles
 
 Update styles in code-editor div class.
 
@@ -118,9 +118,9 @@ Update styles in code-editor div class.
 </style>
 ```
 
-## 2. Save Changes
+## 3. Save Changes
 
-- **1.1** Create one input to the button save and another with type hidden to get the path of actual file. Put textarea and inputs in a form with method post.
+- **3.1** Create one input to the button save and another with type hidden to get the path of actual file. Put textarea and inputs in a form with method post.
 
 ```bash
 ...
@@ -140,7 +140,7 @@ if (isset($_GET['file']) && file_exists('files/' . $_GET['file'])) :
 <?php endif ?>
 ```
 
-- **1.2** In the top of this code, create another php script to put the content in actual file and save changes.
+- **3.2** In the top of this code, create another php script to put the content in actual file and save changes.
 
 ```bash
 <?php
@@ -157,7 +157,7 @@ endif
 </html>
 ```
 
-- **1.3** Finish and update styles
+- **3.3** Finish and update styles
 
 Update styles to finish the project.
 
