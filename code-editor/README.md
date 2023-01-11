@@ -2,7 +2,7 @@
 
 This project is a simple code editor.
 
-## 1. _Project Base_
+## 1. Project Base
 
 - **1.1** Create DOCTYPE html
 
@@ -70,7 +70,7 @@ Style your project in a simple way with the html style tag.
 </body>
 ```
 
-## 2. _Get Files_
+## 2. Get Files
 
 - **1.1** Create a route to the desired file and get it for editing.
 
@@ -118,7 +118,7 @@ Update styles in code-editor div class.
 </style>
 ```
 
-## 2. _Save Changes_
+## 2. Save Changes
 
 - **1.1** Create one input to the button save and another with type hidden to get the path of actual file. Put textarea and inputs in a form with method post.
 
