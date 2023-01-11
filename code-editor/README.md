@@ -8,14 +8,13 @@ This project is a simple code editor.
 
 Create in the source directory an index.php file with a DOCTYPE html. Create a folder with name 'files' and include 2 php files for testing.
 
-```bash
+```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Editor - File List</title>
-</head>
-<body>
-</body>
+  </head>
+  <body></body>
 </html>
 ```
 
@@ -23,7 +22,7 @@ Create in the source directory an index.php file with a DOCTYPE html. Create a f
 
 With php's scandir() function, you can loop to show which files are in the directory.
 
-```bash
+```php
 <body>
     <?php
     $files = scandir('files');
@@ -44,7 +43,7 @@ With php's scandir() function, you can loop to show which files are in the direc
 
 Style your project in a simple way with the html style tag.
 
-```bash
+```css
 <head>
     ...
 </head>
@@ -74,7 +73,7 @@ Style your project in a simple way with the html style tag.
 
 - **2.1** Create a route to the desired file and get it for editing.
 
-```bash
+```php
 <?php
 $files = scandir('files');
 for ($i = 0; $i < count($files); $i++) :
@@ -99,7 +98,7 @@ if (isset($_GET['file']) && file_exists('files/' . $_GET['file'])) :
 
 Update styles in code-editor div class.
 
-```bash
+```css
 <style type="text/css">
     ...
     .code-editor {
@@ -122,7 +121,7 @@ Update styles in code-editor div class.
 
 - **3.1** Create one input to the button save and another with type hidden to get the path of actual file. Put textarea and inputs in a form with method post.
 
-```bash
+```php
 ...
 <?php
 endfor;
@@ -142,7 +141,7 @@ if (isset($_GET['file']) && file_exists('files/' . $_GET['file'])) :
 
 - **3.2** In the top of this code, create another php script to put the content in actual file and save changes.
 
-```bash
+```php
 <?php
 if (isset($_POST['action'])) :
     $text = $_POST['text'];
@@ -161,7 +160,7 @@ endif
 
 Update styles to finish the project.
 
-```bash
+```css
 <style type="text/css">
     ...
     .code-editor input {
